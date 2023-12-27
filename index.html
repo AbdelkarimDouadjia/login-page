@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Double Slider Login / Registration Form</title>
+	<!-- Main Template CSS File -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Lineicons Library -->
+	<link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+</head>
+
+<body>
+
+	<!-- Start Main Content -->
+	<main class="container" id="container">
+		<div class="form-container register-container">
+			<!-- logo image -->
+			<!-- <div class="logo-register">
+        <a href="index.php"><img src="./img/logo.png" alt=""></a>
+      </div> -->
+			<form action="" method="post">
+				<h1>Register hire.</h1>
+
+				<input type="text" placeholder="Nom" name="user_name" required>
+				<input type="text" placeholder="prenom" name="user_prenom" required>
+				<input type="email" placeholder="Email" name="user_email" required>
+				<input type="password" placeholder="Password" name="user_pass" required>
+				<!-- Make a default photo -->
+				<input type="hidden" name="photo" value="img/user/user-pic.jpg">
+				<label for="sexe">Choose your sex:</label>
+				<select name="user_sexe" id="sexe">
+					<option value="M">Male</option>
+					<option value="F">Female</option>
+				</select>
+				<label for="date">Enter Your Date Birthday:</label>
+				<input type="date" id="date" name="user_birthdate" required>
+				<button type="submit">Register</button>
+				<span>or use your account</span>
+				<div class="social-container">
+					<a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+					<a href="#" class="social"><i class="lni lni-google"></i></a>
+					<a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+				</div>
+			</form>
+		</div>
+
+		<div class="form-container login-container">
+			<!-- logo image -->
+			<div class="logo-login">
+				<img src="./img/logo.png" alt="logo" />
+			</div>
+			<form action="" method="post">
+				<h1>Login hire.</h1>
+				<input type="email" placeholder="Email" name="user_email" required>
+				<input type="password" placeholder="Password" name="user_pass" required>
+				<div class="content">
+					<div class="checkbox">
+						<input type="checkbox" name="checkbox" id="checkbox">
+						<label>Remember me</label>
+					</div>
+					<div class="pass-link">
+						<a href="#">Forgot password?</a>
+					</div>
+				</div>
+				<button type="submit">Login</button>
+				<span>or use your account</span>
+				<div class="social-container">
+					<a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+					<a href="#" class="social"><i class="lni lni-google"></i></a>
+					<a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+				</div>
+			</form>
+		</div>
+
+		<div class="overlay-container">
+			<div class="overlay">
+				<video loop autoplay muted
+					poster="https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
+					<source src="pexels-artem-podrez-4832087-1280x720-30fps.mp4" type="video/mp4">
+				</video>
+				<div class="overlay-panel overlay-left">
+					<h1 class="title">Hello <br> friends</h1>
+					<p>if Yout have an account, login here and have fun</p>
+					<button href="0" class="ghost" id="login">Login
+						<i class="lni lni-arrow-left login"></i>
+					</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1 class="title">Start your <br> journy now</h1>
+					<p>if you don't have an account yet, join us and start your journey.</p>
+					<button class="ghost" id="register">Register
+						<i class="lni lni-arrow-right register"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- End Main Content -->
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
